@@ -37,6 +37,7 @@ header {
 main {
     display:grid;
     grid-template-columns:3fr 5fr 2fr;
+    
     /*
     min-height:100vw;
     height:100%;*/
@@ -77,8 +78,12 @@ main {
     display:grid;
     min-height: 0;
     border-left: 2px solid black;
-    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
     grid-template-columns: 0.5fr 3fr 0.5fr;
+}
+
+.mweight {
+    grid-template-rows: repeat(8, 1fr);
 }
 
 .top {
@@ -95,6 +100,7 @@ main {
 .container {
     display:grid;
     grid-template-columns:3fr 5fr 2fr;
+    min-height: 0;
 }
 
 .container-r {
@@ -105,7 +111,7 @@ main {
 
 .option {
     /* height:2rem; */
-    padding:1.6rem;
+    padding:1.5rem;
     border-bottom:2px solid black;
     font-size: 1.3rem;
     grid-column: 2;
@@ -132,6 +138,14 @@ main {
     margin-left: 0.5rem;
 }
 
+.pen-name {
+    font-weight: bold;
+    font-size: 1.3rem;
+    grid-row:3;
+    grid-column: 2;
+    border-bottom: 2px solid black;
+}
+
 .item {
     text-align:left;
     border-bottom:2px solid black;
@@ -141,24 +155,26 @@ main {
 }
 
 .sidebar {
-    padding:1.8rem;
+    padding:1.6rem;
     border-bottom:2px solid black;
 }
 
 .sidebar-empty {
-    padding:1.6rem;
+    padding:1.5rem;
     font-size: 1.3rem;
 }
 
 /* JS */
 
 .step {
-    height: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
     
 }
 
 .step:first-child {
-    display: block;
+    display: grid;
 }
 
 /* BORDER */

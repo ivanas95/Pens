@@ -44,9 +44,9 @@ $(this).closest(".step").hide().next(".step").show();
 
   if ((selections.weight == "THICKER") && (selections.surface=="RECEIPT PAPER")) {
   
-  alert("you've selected thicker weight on receipt paper") 
-  } else {
-  alert("you've selected something different");
+  //alert("you've selected thicker weight on receipt paper") 
+  //} else {
+  //alert("you've selected something different");
   }
 
 })
