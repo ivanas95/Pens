@@ -59,10 +59,26 @@ main {
     grid-template-columns: 3fr 2fr;
 }
 
+.main-middle-r {
+
+    display:grid;
+    min-height: 0;
+    grid-template-rows: 1fr 6fr 1fr;
+
+}
+
 .main-right {
     display:grid;
     min-height: 0;
     border-left: 2px solid black;
+}
+
+.main-right-r {
+    display:grid;
+    min-height: 0;
+    border-left: 2px solid black;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
 }
 
 .top {
@@ -79,6 +95,12 @@ main {
 .container {
     display:grid;
     grid-template-columns:3fr 5fr 2fr;
+}
+
+.container-r {
+    display: grid;
+    grid-template-columns: 3fr 3fr 4fr;
+    min-height: 0;
 }
 
 .option {
