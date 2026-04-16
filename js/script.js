@@ -15,6 +15,36 @@
 //   });
 // });
 
+$(document).ready(function(){
+
+  
+  function checkMobile() {
+    if (window.matchMedia("(max-width: 600px)").matches) {
+      $(".breadcrumb .item").hide();
+      $(".breadcrumb-m .item").show();
+    } else {
+      $(".breadcrumb .item").show();
+      $(".breadcrumb-m .item").hide();
+      $(".breadcrumb-m").hide();
+    }
+  }
+
+  checkMobile();
+  $(window).resize(checkMobile);
+
+    $(".breadcrumb-m").hide();
+
+
+  $(".breadcrumb-stripe").click(function () {
+    $(".breadcrumb-m").toggle();
+  });
+
+});
+
+
+
+
+
 function matches(selection, rule) {
 
   for (let category in rule) {
