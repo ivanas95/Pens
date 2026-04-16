@@ -63,7 +63,7 @@ function matches(selection, rule) {
   colour: null,
 };
 
-
+/*
 $(".option").click(function(){
 
   let option =  $(this).text().trim()
@@ -75,6 +75,7 @@ $(this).closest(".step").hide().next(".step").show();
 
   console.log(selections)
 
+*/
 const pens = [
   {
     pentitle: "MUJI GEL PEN 0.3",
@@ -378,6 +379,58 @@ const pens = [
 
 ];
 
+$(".option").click(function(){
+
+  let option = $(this).text().trim();
+  let stepID = $(this).closest(".step").attr("id");
+
+  selections[stepID] = option;
+  console.log(selections);
+
+
+  // if NOT last step, just go forward
+  if (stepID !== "colour") {
+    $(this).closest(".step").hide().next(".step").show();
+    return;
+  }
+
+  // LAST STEP, run your code
+  let result = null;
+
+  for (let pen of pens) {
+    if (matches(selections, pen.match)) {
+      result = pen;
+      break;
+    }
+  }
+
+  $(".step").hide();
+
+  if (result) {
+    $("#res").show();
+    $("#pentitle").text(result.pentitle);
+    $("#desc").text(result.desc);
+
+    let qualities = [];
+
+    for (let category in selections) {
+      let value = selections[category];
+
+      if (value !== "NO PREFERENCE") {
+        qualities.push(value);
+      }
+    }
+
+    $("#qual").text("FOR " + qualities.join(", "));
+  }
+
+  if (result === null) {
+    $(".error").show();
+  }
+
+//});
+
+/*
 let result = null;
 
 // 1. Find matching pen (no index variable)
@@ -406,7 +459,11 @@ if (result) {
 
   $("#qual").text("FOR " + qualities.join(", "));
 }
-
+if (result === null) {
+  $(".step").hide();
+  $(".error").show();
+}
+*/
 
 
 /*
@@ -430,4 +487,4 @@ if (result) {
   //alert("you've selected something different");
   //}
 */
-})
+});
