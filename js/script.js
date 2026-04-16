@@ -16,7 +16,25 @@
 // });
 
 
-let selections = {
+
+
+
+  $(".item").click(function () {
+
+    $(".step").hide();
+
+    const itemID = $(this).attr("id");   // "b-weight"
+    const target = itemID.replace("b-", ""); // "weight"
+
+    $("#" + target).show();
+
+  });
+
+
+
+
+
+  let selections = {
   surface: null,
   weight: null,
   ink: null,
@@ -24,10 +42,9 @@ let selections = {
   body: null,
   grip: null,
   closure: null,
-  colour: null
+  colour: null,
+  submission: null
 };
-
-
 
 
 $(".option").click(function(){
@@ -42,23 +59,24 @@ $(this).closest(".step").hide().next(".step").show();
   console.log(selections)
 
 
-  if ((selections.weight == "THICKER") && (selections.surface=="RECEIPT PAPER")) {
-  
-  //alert("you've selected thicker weight on receipt paper") 
-  //} else {
+  if ((selections.surface == "WOOD") 
+    && (selections.weight=="BOLD")
+    && (selections.ink=="NO PREFERENCE")
+    && (selections.feel=="NO PREFERENCE")
+    && (selections.body=="CHUNKY")
+    && (selections.grip=="NO PREFERENCE")
+    && (selections.closure=="CAPPED")
+    && (selections.submission=="SUBMIT")
+  ) 
+  {
+  $("#pentitle").text("Hello world!");
+  $("#desc").text("Hello world!");
+    $("#qual").text(
+    `FOR ${selections.surface}, ${selections.weight}, ${selections.ink}, ${selections.feel}, ${selections.body}, HAS ${selections.grip}, ${selections.closure}, HAS ${selections.colour},`
+    );
+  } 
+  // else {
   //alert("you've selected something different");
-  }
+  //}
 
 })
-
-
-  $(".item").click(function () {
-
-    $(".step").hide();
-
-    const itemID = $(this).attr("id");   // "b-weight"
-    const target = itemID.replace("b-", ""); // "weight"
-
-    $("#" + target).show();
-
-  });

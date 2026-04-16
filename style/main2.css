@@ -60,6 +60,11 @@ main {
     grid-template-columns: 3fr 2fr;
 }
 
+.onecol {
+    grid-template-columns: 1fr;
+    line-height: 2.2rem;
+}
+
 .main-middle-r {
 
     display:grid;
@@ -117,6 +122,12 @@ main {
     grid-column: 2;
 }
 
+.text {
+    grid-row:3;
+    grid-column: 2;
+    border-bottom: 2px solid black;
+}
+
 /* TEXT */
 
 .title,
@@ -138,12 +149,19 @@ main {
     margin-left: 0.5rem;
 }
 
-.pen-name {
+.results-title {
     font-weight: bold;
     font-size: 1.3rem;
-    grid-row:3;
-    grid-column: 2;
-    border-bottom: 2px solid black;
+}
+
+.description,
+.qualities {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.qualities {
+    line-height: 1.5rem;
 }
 
 .item {
@@ -151,7 +169,6 @@ main {
     border-bottom:2px solid black;
     padding-top:0.5rem;
     padding-bottom: 0.5rem;
-
 }
 
 .sidebar {
@@ -162,6 +179,10 @@ main {
 .sidebar-empty {
     padding:1.5rem;
     font-size: 1.3rem;
+}
+
+.padding {
+    padding: 1.17rem;
 }
 
 /* JS */
@@ -177,6 +198,12 @@ main {
     display: grid;
 }
 
+.error {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
 /* BORDER */
 
 .border-bottom {
@@ -184,3 +211,8 @@ main {
     border-bottom: 2px solid black;
 }
 
+/* IMAGE */
+
+.image {
+    border-bottom: 2px solid black;
+}
