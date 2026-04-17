@@ -17,11 +17,13 @@
 
 $(document).ready(function(){
 
+
   
   function checkMobile() {
     if (window.matchMedia("(max-width: 600px)").matches) {
       $(".breadcrumb .item").hide();
       $(".breadcrumb-m .item").show();
+
     } else {
       $(".breadcrumb .item").show();
       $(".breadcrumb-m .item").hide();
@@ -35,7 +37,7 @@ $(document).ready(function(){
     $(".breadcrumb-m").hide();
 
 
-  $(".breadcrumb-stripe").click(function () {
+  $(".breadcrumb-stripe, .breadcrumb-stripe-r").click(function () {
     $(".breadcrumb-m").toggle();
   });
 
@@ -79,7 +81,9 @@ function matches(selection, rule) {
   });
 
 
-
+$("#me").click(function () {
+    window.location.reload(true);
+  });
 
 
   let selections = {
@@ -337,21 +341,6 @@ const pens = [
     desc: "Stubby, stainless-steel pen that glides along the page despite its weight.",
     match: {
       surface: ["PAPER PRODUCTS","NO PREFERENCE"],
-      weight: ["BOLD", "NO PREFERENCE"],
-      ink: ["FAST-DRYING", "NO PREFERENCE"],
-      feel: ["DURABLE", "NO PREFERENCE"],
-      body: ["CHUNKY", "NO PREFERENCE"],
-      grip: ["NO GRIP", "NO PREFERENCE"],
-      closure: ["CAPPED", "NO PREFERENCE"],
-      colour: ["COLOUR OPTIONS", "NO PREFERENCE"]
-    }
-  },
-
-  {
-    pentitle: "KAWECO STEEL SPORT 08",
-    desc: "Stubby, stainless-steel pen that glides along the page despite its weight.",
-    match: {
-      surface: ["PAPER PRODUCTS", "NO PREFERENCE"],
       weight: ["BOLD", "NO PREFERENCE"],
       ink: ["FAST-DRYING", "NO PREFERENCE"],
       feel: ["DURABLE", "NO PREFERENCE"],
