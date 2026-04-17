@@ -210,7 +210,7 @@ const pens = [
   {
     pentitle: "GELLY ROLL 08",
     desc: "Very inky gel pen that comes in many colours. Almost opaque. Ideal for illustration.",
-    image: "img/gelly.png",
+    image: "img/gelly.jpg",
     match: {
       surface: ["PAPER PRODUCTS", "FABRIC", "SKIN", "GLOSSY SURFACE", "NO PREFERENCE"],
       weight: ["BOLD", "NO PREFERENCE"],
@@ -226,7 +226,7 @@ const pens = [
   {
     pentitle: "PIGMA MICRON 005, 01, 02",
     desc: "Technically a fineliner. As thin as you can get. Waterproof.",
-    image: "img/pigma.png",
+    image: "img/pigma.jpg",
     match: {
       surface: ["PAPER PRODUCTS", "WOOD", "RECEIPT PAPER", "FABRIC", "NO PREFERENCE"],
       weight: ["MICRO", "NO PREFERENCE"],
@@ -445,9 +445,11 @@ $(".option").click(function(){
   $(".step").hide();
 
   if (result) {
+    
     $("#res").show();
     $(".pentitle").text(result.pentitle);
     $(".desc").text(result.desc);
+    $(".result-image").attr("src", result.image);
 
     let qualities = [];
 

@@ -306,8 +306,14 @@ main {
 
 /* IMAGE */
 
+.result-image {
+    display: block;
+}
+
 .image {
     border-bottom: 2px solid black;
+    display: block;
+    object-fit: cover;
 }
 
 .mi {
@@ -316,7 +322,10 @@ main {
 
 .dk {
         border-bottom: 2px solid black;
+        display: block;
     }
+
+
 
 
 /* PHONE SCREEN */
