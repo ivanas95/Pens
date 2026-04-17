@@ -114,6 +114,7 @@ const pens = [
   {
     pentitle: "MUJI GEL PEN 0.3",
     desc: "Very smooth, uses water based ink. Dries very fast due to small size.",
+    image: "img/muji03.png",
     match: {
       surface: ["PAPER PRODUCTS", "NO PREFERENCE"],
       weight: ["MICRO", "NO PREFERENCE"],
@@ -129,6 +130,7 @@ const pens = [
   {
     pentitle: "MUJI GEL PEN 0.5",
     desc: "Very smooth, uses water based ink. Inky pen but dries very fast.",
+    image: "img/muji05.png",
     match: {
       surface: ["PAPER PRODUCTS", "NO PREFERENCE"],
       weight: ["MEDIUM", "NO PREFERENCE"],
@@ -144,6 +146,7 @@ const pens = [
   {
     pentitle: "MUJI GEL PEN 0.8",
     desc: "Very smooth, uses water based ink. Inky pen but dries very fast.",
+    image: "img/muji03.png",
     match: {
       surface: ["PAPER PRODUCTS", "NO PREFERENCE"],
       weight: ["BOLD", "NO PREFERENCE"],
@@ -159,6 +162,7 @@ const pens = [
   {
     pentitle: "BIC BALLBOINT",
     desc: "Classic. Oil-based ink, dries instantly. Reliable.",
+    image: "img/bic.png",
     match: {
       surface: ["RECEIPT PAPER", "WOOD", "SKIN", "PAPER PRODUCTS", "NO PREFERENCE"],
       weight: ["MEDIUM", "NO PREFERENCE"],
@@ -174,6 +178,7 @@ const pens = [
   {
     pentitle: "ZEBRA SARASA CLIP 0.5",
     desc: "Smooth gel pen that comes in many colours. Can skip when not regularly used. Spring-loaded pen clip.",
+    image: "img/sarasaclip.png",
     match: {
       surface: ["PAPER PRODUCTS", "GLOSSY SURFACE", "NO PREFERENCE"],
       weight: ["MEDIUM", "NO PREFERENCE"],
@@ -189,6 +194,7 @@ const pens = [
   {
     pentitle: "ZEBRA SARASA CLIP 0.5 (VINTAGE)",
     desc: "Smooth gel pen that comes in darker colours. Particularly inkier and smoother than original Zebra clip. Spring-loaded pen clip.",
+    image: "img/vintage.png",
     match: {
       surface: ["PAPER PRODUCTS", "NO PREFERENCE"],
       weight: ["MEDIUM", "NO PREFERENCE"],
@@ -204,6 +210,7 @@ const pens = [
   {
     pentitle: "GELLY ROLL 08",
     desc: "Very inky gel pen that comes in many colours. Almost opaque. Ideal for illustration.",
+    image: "img/gelly.png",
     match: {
       surface: ["PAPER PRODUCTS", "FABRIC", "SKIN", "GLOSSY SURFACE", "NO PREFERENCE"],
       weight: ["BOLD", "NO PREFERENCE"],
@@ -219,6 +226,7 @@ const pens = [
   {
     pentitle: "PIGMA MICRON 005, 01, 02",
     desc: "Technically a fineliner. As thin as you can get. Waterproof.",
+    image: "img/pigma.png",
     match: {
       surface: ["PAPER PRODUCTS", "WOOD", "RECEIPT PAPER", "FABRIC", "NO PREFERENCE"],
       weight: ["MICRO", "NO PREFERENCE"],
@@ -234,6 +242,7 @@ const pens = [
   {
     pentitle: "UNIBALL GEL IMPACT 1.0",
     desc: "Very inky gel pen that comes in many colours. Almost opaque. Ideal for illustration.",
+    image: "img/gelimpact.jpg",
     match: {
       surface: ["PAPER PRODUCTS", "FABRIC", "SKIN", "GLOSSY SURFACE", "NO PREFERENCE"],
       weight: ["BOLD", "NO PREFERENCE"],
@@ -249,6 +258,7 @@ const pens = [
   {
     pentitle: "PILOT HI-TECHPOINT V5 GRIP",
     desc: "Smooth rollerball that dries instantly. Unique tip allows for high stroke contrast.",
+    image: "img/hitech.png",
     match: {
       surface: ["PAPER PRODUCTS", "SKIN", "WOOD", "GLOSSY SURFACE", "NO PREFERENCE"],
       weight: ["MEDIUM", "NO PREFERENCE"],
@@ -264,6 +274,7 @@ const pens = [
   {
     pentitle: "UNIBALL SIGNO GEL 0.38",
     desc: "Smooth gel pen that is less inky than others. Waterproof.",
+    image: "img/signo.png",
     match: {
       surface: ["PAPER PRODUCTS", "SKIN", "NO PREFERENCE"],
       weight: ["FINE", "NO PREFERENCE"],
@@ -279,6 +290,7 @@ const pens = [
   {
     pentitle: "UNI JETSTREAM BALLPOINT, ALPHA GEL",
     desc: "Comfortable pen for long-periods but can skip. Waterproof and forgery-resistant. Very large and squishy grip",
+    image: "img/alpha.png",
     match: {
       surface: ["PAPER PRODUCTS", "WOOD", "SKIN", "NO PREFERENCE"],
       weight: ["MEDIUM", "NO PREFERENCE"],
@@ -292,8 +304,9 @@ const pens = [
   },
 
   {
-    pentitle: "UNIBALL SIGNO GEL",
+    pentitle: "UNIBALL SIGNO GEL 0.7",
     desc: "Less varied colour selection, but very smooth and very opaque. Ideal for illustration.",
+    image: "img/signo7.png",
     match: {
       surface: ["PAPER PRODUCTS", "WOOD", "SKIN", "GLOSSY SURFACE", "NO PREFERENCE"],
       weight: ["BOLD", "NO PREFERENCE"],
@@ -309,6 +322,7 @@ const pens = [
   {
     pentitle: "PENTEL ENERGEL NEEDLE-POINT 0.35",
     desc: "Smooth gel pen that dries very fast. Needle-point tip is ideal for use with a ruler.",
+    image: "img/energel.png",
     match: {
       surface: ["PAPER PRODUCTS", "WOOD", "SKIN", "GLOSSY SURFACE", "NO PREFERENCE"],
       weight: ["MICRO", "NO PREFERENCE"],
@@ -322,8 +336,9 @@ const pens = [
   },
 
   {
-    pentitle: "PILOT FRIXON BALL 05",
+    pentitle: "PILOT FRIXION BALL 05",
     desc: "Erasable gel pen due to its thermo-sensitive ink. Can feel scratchy at times.",
+    image: "img/frixon.png",
     match: {
       surface: ["PAPER PRODUCTS", "NO PREFERENCE"],
       weight: ["MEDIUM", "NO PREFERENCE"],
@@ -339,6 +354,7 @@ const pens = [
   {
     pentitle: "KAWECO STEEL SPORT 08",
     desc: "Stubby, stainless-steel pen that glides along the page despite its weight.",
+    image: "img/kaweco.png",
     match: {
       surface: ["PAPER PRODUCTS","NO PREFERENCE"],
       weight: ["BOLD", "NO PREFERENCE"],
@@ -354,6 +370,7 @@ const pens = [
   {
     pentitle: "ZEBRA F-701",
     desc: "A sleek metal ballpoint. Uses oil-based ink to prevent smear, a little scratchy.",
+    image: "img/701.png",
     match: {
       surface: ["PAPER PRODUCTS", "SKIN", "RECEIPT PAPER", "NO PREFERENCE"],
       weight: ["MEDIUM", "NO PREFERENCE"],
@@ -369,6 +386,7 @@ const pens = [
   {
     pentitle: "ZEBRA F-301",
     desc: "A sleek metal ballpoint but with a plastic grip. Uses oil-based ink to prevent smear, a little scratchy.",
+    image: "img/301.png",
     match: {
       surface: ["PAPER PRODUCTS", "SKIN", "RECEIPT PAPER", "NO PREFERENCE"],
       weight: ["MEDIUM", "NO PREFERENCE"],
@@ -377,13 +395,14 @@ const pens = [
       body: ["SLIM", "NO PREFERENCE"],
       grip: ["A GRIP", "NO PREFERENCE"],
       closure: ["CLICKER", "NO PREFERENCE"],
-      colour: ["NO PREFERENCE"]
+      colour: ["COLOUR OPTIONS", "NO PREFERENCE"]
     }
   },
 
   {
     pentitle: "MUJI COMPACT GEL PEN 0.5",
     desc: "Short and stubby. Very smooth, uses water based ink. Inky pen but dries very fast.",
+    image: "img/compact.png",
     match: {
       surface: ["PAPER PRODUCTS", "NO PREFERENCE"],
       weight: ["MEDIUM", "NO PREFERENCE"],
@@ -427,8 +446,8 @@ $(".option").click(function(){
 
   if (result) {
     $("#res").show();
-    $("#pentitle").text(result.pentitle);
-    $("#desc").text(result.desc);
+    $(".pentitle").text(result.pentitle);
+    $(".desc").text(result.desc);
 
     let qualities = [];
 
@@ -440,7 +459,7 @@ $(".option").click(function(){
       }
     }
 
-    $("#qual").text("FOR " + qualities.join(", "));
+    $(".qual").text("FOR " + qualities.join(", "));
   }
 
   if (result === null) {
@@ -462,7 +481,7 @@ for (let pen of pens) {
 
 // 2. If we found a match, update the page
 if (result) {
-  $("#pentitle").text(result.pentitle);
+  $(".pentitle").text(result.pentitle);
   $("#desc").text(result.desc);
 
 // 3. Build qualification text
@@ -496,7 +515,7 @@ if (result === null) {
     && (selections.submission=="SUBMIT")
   ) 
   {
-  $("#pentitle").text("Hello world!");
+  $(".pentitle").text("Hello world!");
   $("#desc").text("Hello world!");
     $("#qual").text(
     `FOR ${selections.surface}, ${selections.weight}, ${selections.ink}, ${selections.feel}, ${selections.body}, HAS ${selections.grip}, ${selections.closure}, HAS ${selections.colour},`

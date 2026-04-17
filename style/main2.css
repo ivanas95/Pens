@@ -154,7 +154,8 @@ main {
     margin-left: 0.5rem;
 }
 
-.results-title {
+.results-title,
+.pen-title {
     font-weight: bold;
     font-size: 1.3rem;
 }
@@ -308,6 +309,15 @@ main {
 .image {
     border-bottom: 2px solid black;
 }
+
+.mi {
+    display: none;
+}
+
+.dk {
+        border-bottom: 2px solid black;
+    }
+
 
 /* PHONE SCREEN */
 
@@ -507,28 +517,28 @@ main {
         grid-template-columns: 1fr;
     }
 
-    #pentitle {
-        font-size: 1rem;
-        font-weight: bold;
-        padding-top:1rem;
-        padding-left: 1rem;
 
-    }
 
-    #desc {
+    .desc {
         padding-top:1rem;
         padding-left: 1rem;
         padding-bottom: 0;
         font-size: 0.9rem;
     }
 
-    .results-title {
+    .pen-title {
         font-size:1rem;
         padding-left: 1rem;
-        padding-top:0rem;
+        padding-top:1rem;
     }
 
-    #qual {
+    .results-title {
+        padding-top:0;
+        font-size:1rem;
+        padding-left: 1rem;
+    }
+
+    .qual {
         font-size: 0.9rem;
         padding-left: 1rem;
         padding-top: 0.5rem;
@@ -537,6 +547,14 @@ main {
 
     .border-bottom-nv {
         display:none;
+    }
+
+    .mi {
+        display: block;
+    }
+
+    .dk {
+        display: none;
     }
 
 
